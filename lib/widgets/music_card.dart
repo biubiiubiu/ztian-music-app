@@ -45,7 +45,7 @@ class MusicCard extends StatelessWidget {
                   name,
                   style: primaryText,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 6,
                 ),
                 Text(
