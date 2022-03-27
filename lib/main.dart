@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ztian_music_app/pages/home.dart';
-import 'package:ztian_music_app/pages/login.dart';
+import 'package:ztian_music_app/pages/home/home_page.dart';
+import 'package:ztian_music_app/pages/login/login_page.dart';
 
 void main() {
   runApp(const ZtianMusic());
@@ -29,8 +29,8 @@ class ZtianMusic extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const Home(),
-        '/login': (context) => const Login()
+        '/': (context) => const HomePage(),
+        '/login': (context) => const LoginPage()
       },
     );
   }

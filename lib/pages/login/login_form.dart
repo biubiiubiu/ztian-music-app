@@ -24,14 +24,14 @@ class _loginFormState extends State<LoginForm> {
             "登录",
             style: TextStyle(
               fontSize: 24,
-              color: Color(0xFF3970A7),
+              color: Color(0xFF002251),
               letterSpacing: 0,
               fontWeight: FontWeight.w500
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 7),
           const Text(
-              "欢迎来到ZtianMusic！",
+              "欢迎来到猿力音乐",
             style: TextStyle(
               fontSize: 14,
               color: Color(0xFF7A869A),
@@ -80,7 +80,8 @@ class _loginFormState extends State<LoginForm> {
             widthFactor: 1,
             child: ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/');},
+                Navigator.pushNamed(context, '/');
+              },
               child: const Text("登录"),
             ),
           ),
@@ -94,7 +95,8 @@ class _loginFormState extends State<LoginForm> {
                 letterSpacing: 0,
                 fontWeight: FontWeight.w400
               ),),
-              Text("立即注册", style: TextStyle(
+              Text("立即注册",
+                style: TextStyle(
                   color: primary,
                   fontSize: 14,
                   letterSpacing: 0,
