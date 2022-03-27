@@ -14,6 +14,7 @@ class ZtianMusic extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ZtianMusic',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,6 +27,7 @@ class ZtianMusic extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      initialRoute: '/',
       routes: {
         '/': (context) => const Home(),
         '/login': (context) => const Login()
