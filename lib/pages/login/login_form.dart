@@ -31,7 +31,7 @@ class _loginFormState extends State<LoginForm> {
           ),
           const SizedBox(height: 7),
           const Text(
-              "欢迎来到猿力音乐",
+              "欢迎来到Ztian音乐",
             style: TextStyle(
               fontSize: 14,
               color: Color(0xFF7A869A),

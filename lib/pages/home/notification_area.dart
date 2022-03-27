@@ -1,7 +1,9 @@
+import 'dart:developer';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../theme.dart';
+import 'package:ztian_music_app/theme.dart';
 
 class NotificationArea extends StatelessWidget {
   const NotificationArea({
@@ -60,7 +62,9 @@ class NotificationArea extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/login');
+                                },
                                 icon:
                                     SvgPicture.asset('assets/icons/bell.svg')),
                             const SizedBox(
@@ -75,8 +79,8 @@ class NotificationArea extends StatelessWidget {
                               child: const Image(
                                   width: 38,
                                   height: 38,
-                                  image: AssetImage(
-                                      'assets/images/avatar.png')),
+                                  image:
+                                      AssetImage('assets/images/avatar.png')),
                             )
                           ],
                         )
