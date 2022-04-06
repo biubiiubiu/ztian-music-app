@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ztian_music_app/pages/login/login_form.dart';
+import 'package:ztian_music_app/pages/login/registry_form.dart';
 import 'package:ztian_music_app/theme.dart';
 
 class LoginPage extends StatefulWidget {
@@ -42,9 +43,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                   controller: _tabController,
                   children: const <Widget>[
                     LoginForm(),
-                    Center(
-                      child: Text("注册"),
-                    )
+                    RegistryForm()
                   ],
                 ),
               )
